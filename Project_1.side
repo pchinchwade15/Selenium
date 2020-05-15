@@ -1,0 +1,110 @@
+{
+  "id": "8fca522a-8002-4e23-886f-83a62e6a2a16",
+  "version": "2.0",
+  "name": "Project_1",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "da55b992-4f97-467f-b537-82e2122441a7",
+    "name": "First_test",
+    "commands": [{
+      "id": "2f565093-76e7-4361-a8d2-89e64c644b2f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d2e8a9b-d51e-4387-9e8d-9a34eeabe6b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "649x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "124a02c2-bb0a-4835-a702-2a85d2383e67",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js-link-box-en > strong",
+      "targets": [
+        ["css=#js-link-box-en > strong", "css:finder"],
+        ["xpath=//a[@id='js-link-box-en']/strong", "xpath:idRelative"],
+        ["xpath=//a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc67a2fd-4069-47dd-956b-fff05cf168e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c64587a3-d9fd-46b0-acf6-4733901e3e03",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e206b7f0-78e0-4dc2-9196-f8613ba9bb5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "selenium software"
+    }, {
+      "id": "f98ed6de-5672-42ab-ad5b-27d1187fcd56",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["name=go", "name"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//input[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ac14f3-bcb0-4925-b56b-37a7d85a2888",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium (software)",
+      "targets": [
+        ["linkText=Selenium (software)", "linkText"],
+        ["css=.mw-search-result:nth-child(1) a", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div[3]/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Selenium_(software)')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium (software)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0379d8d3-226b-4232-850b-da666f58b6bf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["da55b992-4f97-467f-b537-82e2122441a7"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}
